@@ -6,32 +6,33 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true
+			"recommended": true,
+			"complexity": {
+				"noForEach": "off"
+			}
 		}
 	},
-	"formatter":{
+	"formatter": {
 		"enabled": true,
-		"indentStyle":"tab",
-		"lineWidth":120,
-		"indentWidth":2,
-		"attributePosition":"auto",
+		"indentStyle": "tab",
+		"lineWidth": 120,
+		"indentWidth": 2,
+		"attributePosition": "auto",
 		"formatWithErrors": false
 	},
-	"javascript":{
-		"formatter":{
-			"arrowParentheses":"always",
+	"javascript": {
+		"formatter": {
+			"arrowParentheses": "always",
 			"bracketSameLine": false,
 			"bracketSpacing": false,
-			"jsxQuoteStyle":"double",
-			"quoteProperties":"asNeeded",
-			"trailingComma":"all",
-			"semicolons":"asNeeded"
+			"jsxQuoteStyle": "double",
+			"quoteProperties": "asNeeded",
+			"semicolons": "asNeeded"
 		}
 	},
-	"json":{
-		"formatter":{
-			"trailingCommas":"none"
+	"json": {
+		"formatter": {
+			"trailingCommas": "none"
 		}
 	}
-
 }
