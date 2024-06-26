@@ -10,16 +10,13 @@ importers:
     dependencies:
       '@langchain/core':
         specifier: ^0.2.10
-        version: 0.2.10(langchain@0.2.6(ignore@5.2.4)(openai@4.52.0))(openai@4.52.0)
+        version: 0.2.10(langchain@0.2.6(openai@4.52.0))(openai@4.52.0)
       '@langchain/openai':
         specifier: ^0.2.0
-        version: 0.2.0(langchain@0.2.6(ignore@5.2.4)(openai@4.52.0))
+        version: 0.2.0(langchain@0.2.6(openai@4.52.0))
       dotenv:
         specifier: ^16.4.5
         version: 16.4.5
-      langchain:
-        specifier: ^0.2.6
-        version: 0.2.6(ignore@5.2.4)(openai@4.52.0)
       less:
         specifier: ^4.2.0
         version: 4.2.0
@@ -4457,13 +4454,13 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  '@langchain/core@0.2.10(langchain@0.2.6(ignore@5.2.4)(openai@4.52.0))(openai@4.52.0)':
+  '@langchain/core@0.2.10(langchain@0.2.6(openai@4.52.0))(openai@4.52.0)':
     dependencies:
       ansi-styles: 5.2.0
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.12
-      langsmith: 0.1.32(@langchain/core@0.2.10(langchain@0.2.6(ignore@5.2.4)(openai@4.52.0))(openai@4.52.0))(langchain@0.2.6(ignore@5.2.4)(openai@4.52.0))(openai@4.52.0)
+      langsmith: 0.1.32(@langchain/core@0.2.10(langchain@0.2.6(openai@4.52.0))(openai@4.52.0))(langchain@0.2.6(openai@4.52.0))(openai@4.52.0)
       ml-distance: 4.0.1
       mustache: 4.2.0
       p-queue: 6.6.2
@@ -4475,9 +4472,9 @@ snapshots:
       - langchain
       - openai
 
-  '@langchain/openai@0.2.0(langchain@0.2.6(ignore@5.2.4)(openai@4.52.0))':
+  '@langchain/openai@0.2.0(langchain@0.2.6(openai@4.52.0))':
     dependencies:
-      '@langchain/core': 0.2.10(langchain@0.2.6(ignore@5.2.4)(openai@4.52.0))(openai@4.52.0)
+      '@langchain/core': 0.2.10(langchain@0.2.6(openai@4.52.0))(openai@4.52.0)
       js-tiktoken: 1.0.12
       openai: 4.52.0
       zod: 3.23.8
@@ -4486,13 +4483,14 @@ snapshots:
       - encoding
       - langchain
 
-  '@langchain/textsplitters@0.0.3(langchain@0.2.6(ignore@5.2.4)(openai@4.52.0))(openai@4.52.0)':
+  '@langchain/textsplitters@0.0.3(langchain@0.2.6(openai@4.52.0))(openai@4.52.0)':
     dependencies:
-      '@langchain/core': 0.2.10(langchain@0.2.6(ignore@5.2.4)(openai@4.52.0))(openai@4.52.0)
+      '@langchain/core': 0.2.10(langchain@0.2.6(openai@4.52.0))(openai@4.52.0)
       js-tiktoken: 1.0.12
     transitivePeerDependencies:
       - langchain
       - openai
+    optional: true
 
   '@lezer/common@0.15.12': {}
 
@@ -7123,23 +7121,24 @@ snapshots:
     optionalDependencies:
       graceful-fs: 4.2.11
 
-  jsonpointer@5.0.1: {}
+  jsonpointer@5.0.1:
+    optional: true
 
   keyv@4.5.4:
     dependencies:
       json-buffer: 3.0.1
 
-  langchain@0.2.6(ignore@5.2.4)(openai@4.52.0):
+  langchain@0.2.6(openai@4.52.0):
     dependencies:
-      '@langchain/core': 0.2.10(langchain@0.2.6(ignore@5.2.4)(openai@4.52.0))(openai@4.52.0)
-      '@langchain/openai': 0.2.0(langchain@0.2.6(ignore@5.2.4)(openai@4.52.0))
-      '@langchain/textsplitters': 0.0.3(langchain@0.2.6(ignore@5.2.4)(openai@4.52.0))(openai@4.52.0)
+      '@langchain/core': 0.2.10(langchain@0.2.6(openai@4.52.0))(openai@4.52.0)
+      '@langchain/openai': 0.2.0(langchain@0.2.6(openai@4.52.0))
+      '@langchain/textsplitters': 0.0.3(langchain@0.2.6(openai@4.52.0))(openai@4.52.0)
       binary-extensions: 2.3.0
       js-tiktoken: 1.0.12
       js-yaml: 4.1.0
       jsonpointer: 5.0.1
       langchainhub: 0.0.11
-      langsmith: 0.1.32(@langchain/core@0.2.10(langchain@0.2.6(ignore@5.2.4)(openai@4.52.0))(openai@4.52.0))(langchain@0.2.6(ignore@5.2.4)(openai@4.52.0))(openai@4.52.0)
+      langsmith: 0.1.32(@langchain/core@0.2.10(langchain@0.2.6(openai@4.52.0))(openai@4.52.0))(langchain@0.2.6(openai@4.52.0))(openai@4.52.0)
       ml-distance: 4.0.1
       openapi-types: 12.1.3
       p-retry: 4.6.2
@@ -7147,15 +7146,15 @@ snapshots:
       yaml: 2.4.2
       zod: 3.23.8
       zod-to-json-schema: 3.23.1(zod@3.23.8)
-    optionalDependencies:
-      ignore: 5.2.4
     transitivePeerDependencies:
       - encoding
       - openai
+    optional: true
 
-  langchainhub@0.0.11: {}
+  langchainhub@0.0.11:
+    optional: true
 
-  langsmith@0.1.32(@langchain/core@0.2.10(langchain@0.2.6(ignore@5.2.4)(openai@4.52.0))(openai@4.52.0))(langchain@0.2.6(ignore@5.2.4)(openai@4.52.0))(openai@4.52.0):
+  langsmith@0.1.32(@langchain/core@0.2.10(langchain@0.2.6(openai@4.52.0))(openai@4.52.0))(langchain@0.2.6(openai@4.52.0))(openai@4.52.0):
     dependencies:
       '@types/uuid': 9.0.8
       commander: 10.0.1
@@ -7163,8 +7162,8 @@ snapshots:
       p-retry: 4.6.2
       uuid: 9.0.1
     optionalDependencies:
-      '@langchain/core': 0.2.10(langchain@0.2.6(ignore@5.2.4)(openai@4.52.0))(openai@4.52.0)
-      langchain: 0.2.6(ignore@5.2.4)(openai@4.52.0)
+      '@langchain/core': 0.2.10(langchain@0.2.6(openai@4.52.0))(openai@4.52.0)
+      langchain: 0.2.6(openai@4.52.0)
       openai: 4.52.0
 
   less@4.2.0:
@@ -7593,7 +7592,8 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  openapi-types@12.1.3: {}
+  openapi-types@12.1.3:
+    optional: true
 
   ora@5.4.1:
     dependencies:
