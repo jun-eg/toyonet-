@@ -15,6 +15,7 @@
     "typecheck": "pnpm hcm && tsc --noEmit"
   },
   "dependencies": {
+    "@langchain/core": "^0.2.10",
     "dotenv": "^16.4.5",
     "langchain": "^0.2.6",
     "less": "^4.2.0",
