@@ -6,6 +6,9 @@
 		"paths": {
 			"~*": ["./*"]
 		},
-		"baseUrl": "."
+		"baseUrl": ".",
+		"module": "Node16",
+		"target": "ES2022",
+		"moduleResolution": "Node16"
 	}
 }
